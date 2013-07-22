@@ -13,8 +13,8 @@ describe('apiArgsParser', function () {
         res = {};
     });
 
-    it('creates a conditions object', function(done) {
-        apiArgsParser(req, res, function(){
+    it('creates a conditions object', function (done) {
+        apiArgsParser(req, res, function () {
             expect(req).to.have.property('conditions');
 
             expect(req.conditions).to.eql({});
@@ -54,17 +54,30 @@ describe('apiArgsParser', function () {
         });
     });
 
-    it('sets default limit and offset', function (done) {
-        req.query.limit = 9;
-        req.query.offset = 17;
+    it('prases limit and offset to numbers', function (done) {
+        req.query.limit = '9';
+        req.query.offset = '17';
 
         apiArgsParser(req, res, function () {
-            expect(req).to.have.property('opts');
             expect(req.opts).to.have.property('limit');
             expect(req.opts).to.have.property('skip');
 
-            expect(req.opts.limit).to.equal(req.query.limit);
-            expect(req.opts.skip).to.equal(req.query.offset);
+            expect(req.opts.limit).to.be.a('number');
+            expect(req.opts.skip).to.be.a('number');
+            return done();
+        });
+    });
+
+    it('sets default limit and offset', function (done) {
+        req.query.limit = '9';
+        req.query.offset = '17';
+
+        apiArgsParser(req, res, function () {
+            expect(req.opts).to.have.property('limit');
+            expect(req.opts).to.have.property('skip');
+
+            expect(req.opts.limit).to.equal(9);
+            expect(req.opts.skip).to.equal(17);
             return done();
         });
     });

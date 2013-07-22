@@ -1,4 +1,4 @@
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
 module.exports = function (dal) {
 
@@ -31,9 +31,8 @@ module.exports = function (dal) {
         description: {
             type: String
         },
-        tags: [String],
-        crag: mongoose.Schema.Types.ObjectId
-    })
+        tags: [String]
+    });
 
     return mongoose.model('routes', RouteSchema);
 

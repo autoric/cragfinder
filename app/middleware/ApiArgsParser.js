@@ -1,7 +1,9 @@
+var _ = require('underscore')
+
 module.exports = function (constants) {
     return function (req, res, next) {
-        var limit = req.query.limit || constants["API.LIMIT"],
-            offset = req.query.offset || 0,
+        var limit = _.isNaN(parseInt(req.query.limit)) ? constants["API.LIMIT"] : parseInt(req.query.limit),
+            offset = parseInt(req.query.offset) || 0,
             fields = req.query.fields || '';
 
         req.conditions = {};
@@ -12,6 +14,7 @@ module.exports = function (constants) {
         };
 
         res.meta = {
+            fields: fields,
             offset: offset,
             limit: limit
         };

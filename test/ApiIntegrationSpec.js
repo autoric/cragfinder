@@ -3,7 +3,7 @@ var expect = require('expect.js'),
     request = require('supertest'),
     cragfinder = require('..');
 
-xdescribe('REST api', function () {
+describe('REST api', function () {
     var crags = [
         {
             name: 'Cooper\'s Rock State Park',
@@ -114,9 +114,56 @@ xdescribe('REST api', function () {
             });
         });
 
-        it('provides a valid prev url');
+        it('provides a valid prev url', function (done) {
+            makeRequest('?limit=2&offset=1').end(function (err, res) {
+                if (err) return done(err);
+                var meta = res.body.meta;
+                var page2 = res.body.data;
 
-        it('respects the fields argument');
+                expect(meta).to.have.property('prev');
+                expect(meta.prev).to.equal('/api/crags?limit=2&offset=0');
+                request(app).get(meta.prev).end(function (err, res) {
+                    if (err) return done(err);
+                    var page1 = res.body.data,
+                        allPages = _.union(page1.slice(0,1), page2);
+
+                    expect(documentCompare(allPages, crags)).to.be(true);
+                    return done();
+                });
+            });
+        });
+
+        it('returns the fields argument on meta', function(done){
+            makeRequest('?fields=name').end(function(err, res){
+                if(err) return done(err);
+                var meta = res.body.meta;
+
+                expect(meta).to.have.property('fields');
+                expect(meta.fields).equal('name');
+                return done();
+            });
+        });
+
+        it('respects the fields argument', function(done){
+            makeRequest('?fields=name').end(function(err, res){
+                if(err) return done(err);
+                var data = res.body.data;
+
+                expect(data).to.be.an('array');
+                data.forEach(function(crag, i){
+                    expect(crag).to.have.property('name');
+                    expect(crag).not.to.have.property('description');
+                    expect(crag.name).to.equal(crags[i].name);
+                })
+                return done();
+            });
+        })
+    });
+
+    describe('POST /crags', function(){
+
+        it('')
+
     });
 
 

@@ -72,7 +72,7 @@ describe('ApiResponseFormatter', function () {
         res.json = function (r) {
             expect(r.meta).to.have.property('next');
 
-            expect(r.meta.next).to.equal(req.originalUrl + '?limit=5&offset=5');
+            expect(r.meta.next).to.equal('/api/crags?limit=5&offset=5');
             return done();
         }
 
@@ -102,7 +102,7 @@ describe('ApiResponseFormatter', function () {
         res.json = function (r) {
             expect(r.meta).to.have.property('prev');
 
-            expect(r.meta.prev).to.equal(req.originalUrl + '?limit=5&offset=15');
+            expect(r.meta.prev).to.equal('/api/crags?limit=5&offset=15');
             return done();
         }
 
@@ -132,7 +132,7 @@ describe('ApiResponseFormatter', function () {
         res.json = function (r) {
             expect(r.meta).to.have.property('prev');
 
-            expect(r.meta.prev).to.equal(req.originalUrl + '?limit=50&offset=0');
+            expect(r.meta.prev).to.equal('/api/crags?limit=50&offset=0');
             return done();
         }
 
