@@ -3,7 +3,7 @@ var expect = require('expect.js'),
     request = require('supertest'),
     cragfinder = require('..');
 
-describe('REST api', function () {
+xdescribe('REST api', function () {
     var crags = [
         {
             name: 'Cooper\'s Rock State Park',

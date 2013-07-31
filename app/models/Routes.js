@@ -5,17 +5,17 @@ module.exports = function (dal) {
     var RouteSchema = new mongoose.Schema({
         name: {
             type: String,
-            require: true
+            required: true
         },
         latitude: {
             type: Number,
-            require: true,
+            required: true,
             min: -90,
             max: 90
         },
         longitude: {
             type: Number,
-            require: true,
+            required: true,
             min: -180,
             max: 180
         },
@@ -31,9 +31,14 @@ module.exports = function (dal) {
         description: {
             type: String
         },
-        tags: [String]
+        tags: [String],
+        crag: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'crags',
+            required: true
+        }
     });
 
+    //TODO: define post save hook for calculation of the corresponding crag's
     return mongoose.model('routes', RouteSchema);
-
-}
+};

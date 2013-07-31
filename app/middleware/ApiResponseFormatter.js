@@ -12,6 +12,9 @@ module.exports = function () {
 
         //if this is a list response
         if (meta.count) {
+            meta.offset = req.opts.skip;
+            meta.limit = req.opts.limit;
+
             if (meta.offset !== 0) {
                 prevOffset = meta.offset - meta.limit;
                 if (prevOffset < 0) {

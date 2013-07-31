@@ -1,19 +1,15 @@
 //var resource = require('express-resource');
 
-module.exports = function (app, models, ApiCtrl, HomeController, ApiArgsParser, ApiResponseFormatter, ApiErrorMiddleware) {
+module.exports = function (app, models, ApiCtrl, ApiParseQS, ApiResponseFormatter) {
 
-    // Home
-    //app.resource(app.controllers.home);
-    app.get('/', HomeController.index);
-
-    //Generic restful api for all models - if previous routes are not matched, will fall back to these
-    //See libs/params.js, which adds param middleware to load & set req.Model based on :model argument
-    app.all('/api/*', ApiArgsParser);
+    app.all('/api/*', ApiParseQS);
 
     app.get('/api/:model', ApiCtrl.getAll);
     app.post('/api/:model', ApiCtrl.create);
     app.get('/api/:model/:id', ApiCtrl.read);
-    app.post('/api/:model/:id', ApiCtrl.update);
+    app.put('/api/:model/:id', ApiCtrl.replace);
+    app.post('/api/:model/:id', ApiCtrl.replace);
+    app.patch('/api/:model/:id', ApiCtrl.patch);
     app.del('/api/:model/:id', ApiCtrl.destroy);
 
     app.all('/api/*', ApiResponseFormatter);

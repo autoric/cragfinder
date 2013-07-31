@@ -13,7 +13,6 @@
         "connect-mongodb": "latest",
         "mongoose": "latest",
         "async": "latest",
-        "express-hbs": "latest",
         "passport": "latest",
         "winston": "latest",
         "express-trace": "0.0.3",

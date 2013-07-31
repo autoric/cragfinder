@@ -3,7 +3,7 @@ var _ = require('underscore')
 module.exports = function () {
 
     return function ErrorHandler(err, req, res, next) {
-        console.log(err);
+        console.error(err.stack);
         //check for validation errors - this is the format of a mongoose ValidationError
         if (err.name === 'ValidationError') {
             res.send(400, {
@@ -19,7 +19,7 @@ module.exports = function () {
             return res.send(500, {
                 developerMessage: 'An internal server error has occurred.',
                 userMessage: 'An unexpected error was encountered',
-                error: err
+                error: err.stack
             });
         }
     };

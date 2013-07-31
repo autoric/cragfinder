@@ -10,40 +10,7 @@ module.exports = function (dal) {
         description: {
             type: String
         },
-        routes: [
-            {
-                _id: mongoose.Schema.Types.ObjectId,
-                name: {
-                    type: String,
-                    require: true
-                },
-                latitude: {
-                    type: Number,
-                    require: true,
-                    min: -90,
-                    max: 90
-                },
-                longitude: {
-                    type: Number,
-                    require: true,
-                    min: -180,
-                    max: 180
-                },
-                type: {
-                    type: String
-                },
-                grade: {
-                    type: String
-                },
-                quality: {
-                    type: Number
-                },
-                description: {
-                    type: String
-                },
-                tags: [String]
-            }
-        ]
+        trails: [String]
     });
 
     //TODO: trails, access

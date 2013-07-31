@@ -7,7 +7,8 @@ describe('ApiResponseFormatter', function () {
 
     beforeEach(function () {
         req = {
-            originalUrl: '/api/crags'
+            originalUrl: '/api/crags',
+            opts: {}
         };
 
         res = {
@@ -46,8 +47,8 @@ describe('ApiResponseFormatter', function () {
 
     it('count, limit, and offset metadata is passed through', function (done) {
         res.meta.count = 123;
-        res.meta.limit = 5;
-        res.meta.offset = 0;
+        req.opts.limit = 5;
+        req.opts.skip = 0;
 
         res.json = function (r) {
             expect(r.meta).to.have.property('count');
@@ -66,8 +67,8 @@ describe('ApiResponseFormatter', function () {
     it('calculates nex url correctly', function (done) {
         req.originalUrl = req.originalUrl+'?limit=5';
         res.meta.count = 200;
-        res.meta.limit = 5;
-        res.meta.offset = 0;
+        req.opts.limit =5;
+        req.opts.skip = 0;
 
         res.json = function (r) {
             expect(r.meta).to.have.property('next');
@@ -82,8 +83,8 @@ describe('ApiResponseFormatter', function () {
     it('does not return a next url when the current data set is the tail', function(done){
         req.originalUrl = req.originalUrl+'?limit=50&offset=179';
         res.meta.count = 200;
-        res.meta.limit = 50;
-        res.meta.offset = 179;
+        req.opts.limit =50;
+        req.opts.skip = 179;
 
         res.json = function (r) {
             expect(r.meta).not.to.have.property('next');
@@ -96,8 +97,8 @@ describe('ApiResponseFormatter', function () {
     it('calculates prev url correctly', function (done) {
         req.originalUrl = req.originalUrl+'?limit=5&offset=20';
         res.meta.count = 200;
-        res.meta.limit = 5;
-        res.meta.offset = 20;
+        req.opts.limit =5;
+        req.opts.skip = 20;
 
         res.json = function (r) {
             expect(r.meta).to.have.property('prev');
@@ -112,8 +113,8 @@ describe('ApiResponseFormatter', function () {
     it('does not return a prev url when the current data set is the head', function(done){
         req.originalUrl = req.originalUrl+'?limit=50';
         res.meta.count = 200;
-        res.meta.limit = 50;
-        res.meta.offset = 0;
+        req.opts.limit =50;
+        req.opts.skip = 0;
 
         res.json = function (r) {
             expect(r.meta).not.to.have.property('prev');
@@ -126,8 +127,8 @@ describe('ApiResponseFormatter', function () {
     it('caps offset at zero', function(done) {
         req.originalUrl = req.originalUrl+'?limit=50&offset=20';
         res.meta.count = 200;
-        res.meta.limit = 50;
-        res.meta.offset = 20;
+        req.opts.limit =50;
+        req.opts.skip = 20;
 
         res.json = function (r) {
             expect(r.meta).to.have.property('prev');

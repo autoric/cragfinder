@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApiIntegrationSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ApiIntegrationSpec.js">
+      <file leaf-file-name="ApiParseQS.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/middleware/ApiParseQS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="18" selection-start="5498" selection-end="5498" vertical-scroll-proportion="0.0">
+            <state line="5" column="21" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -32,25 +32,16 @@
       <file leaf-file-name="ApiCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ApiCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="27" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0">
+            <state line="77" column="32" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+      <file leaf-file-name="Crags.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Crags.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiArgsParser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/middleware/ApiArgsParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+            <state line="16" column="47" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,16 +50,27 @@
       <file leaf-file-name="Routes.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="114" selection-end="697" vertical-scroll-proportion="0.0">
+            <state line="22" column="24" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crags.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/Crags.js">
+      <file leaf-file-name="routes.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="319" selection-end="319" vertical-scroll-proportion="0.24972129">
+            <state line="2" column="81" selection-start="128" selection-end="128" vertical-scroll-proportion="0.056239016">
+              <folding>
+                <marker date="1375253774000" expanded="true" signature="548:1135" placeholder="//..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiResponseFormatter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/middleware/ApiResponseFormatter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="21" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,30 +86,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/lib/middleware.js" />
+        <option value="$PROJECT_DIR$/app/models/TestSchema.js" />
         <option value="$PROJECT_DIR$/app/middleware/ApiErrorMiddleware.js" />
-        <option value="$PROJECT_DIR$/app/lib/routes.js" />
-        <option value="$PROJECT_DIR$/app/controllers/ApiCtrl.js" />
-        <option value="$PROJECT_DIR$/app/lib/constants.js" />
-        <option value="$PROJECT_DIR$/config/test.json" />
-        <option value="$PROJECT_DIR$/config/default.json" />
-        <option value="$PROJECT_DIR$/test/api.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/test/ResponseFormatterSpec.js" />
-        <option value="$PROJECT_DIR$/test/ArgsParserSpec.js" />
-        <option value="$PROJECT_DIR$/app/middleware/ApiResponseFormatter.js" />
-        <option value="$PROJECT_DIR$/test/ApiIntegrationSpec.js" />
         <option value="$PROJECT_DIR$/app/middleware/ApiArgsParser.js" />
-        <option value="$PROJECT_DIR$/app/models/Routes.js" />
+        <option value="$PROJECT_DIR$/test/ApiIntegrationSpec.js" />
+        <option value="$PROJECT_DIR$/test/ArgsParserSpec.js" />
+        <option value="$PROJECT_DIR$/test/ApiParseRouteSpec.js" />
+        <option value="$PROJECT_DIR$/app/middleware/ApiParseRoute.js" />
+        <option value="$PROJECT_DIR$/app/lib/util/fieldParser.js" />
+        <option value="$PROJECT_DIR$/test/ApiParseQSSpec.js" />
+        <option value="$PROJECT_DIR$/app/middleware/ApiParseQS.js" />
+        <option value="$PROJECT_DIR$/app/middleware/ApiResponseFormatter.js" />
+        <option value="$PROJECT_DIR$/test/ResponseFormatterSpec.js" />
+        <option value="$PROJECT_DIR$/app/controllers/ApiCtrl.js" />
         <option value="$PROJECT_DIR$/app/models/Crags.js" />
+        <option value="$PROJECT_DIR$/app/models/Routes.js" />
+        <option value="$PROJECT_DIR$/app/lib/routes.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
-    <option name="y" value="22" />
-    <option name="width" value="1632" />
-    <option name="height" value="1045" />
+    <option name="x" value="152" />
+    <option name="y" value="39" />
+    <option name="width" value="1625" />
+    <option name="height" value="1009" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -220,6 +222,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,47 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,15 +375,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Settings.JavaScript.Linters.JSLint" />
-    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -438,6 +402,9 @@
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/app/controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -478,19 +445,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="22" width="1632" height="1045" extended-state="0" />
+    <frame x="152" y="39" width="1625" height="1009" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20261031" sideWeight="0.67099565" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20349564" sideWeight="0.6711712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -552,115 +519,99 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/lib/middleware.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="30" selection-start="1382" selection-end="1400" vertical-scroll-proportion="0.0">
+        <state line="25" column="29" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/constants.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/CragsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/dal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ApiIntegrationSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="136" selection-end="136" vertical-scroll-proportion="-2.2520325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ApiParseQSSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="226" selection-end="226" vertical-scroll-proportion="0.092915215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="16" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.5753676">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/middleware/ApiErrorMiddleware.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="15" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ArgsParserSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="537" selection-end="537" vertical-scroll-proportion="0.25969645">
+        <state line="5" column="8" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ResponseFormatterSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="52" selection-start="3765" selection-end="3765" vertical-scroll-proportion="-14.423077">
+        <state line="54" column="53" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.37601626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/middleware/ApiResponseFormatter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+        <state line="35" column="21" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Downloads/KML_Samples.xml">
+    <entry file="file://$PROJECT_DIR$/app/middleware/ApiParseQS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="27" selection-start="6660" selection-end="6660" vertical-scroll-proportion="-11.950631">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/middleware/ApiArgsParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ApiIntegrationSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="18" selection-start="5498" selection-end="5498" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+        <state line="5" column="21" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ApiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="27" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="114" selection-end="697" vertical-scroll-proportion="0.0">
+        <state line="77" column="32" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Crags.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="319" selection-end="319" vertical-scroll-proportion="0.24972129">
+        <state line="16" column="47" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="81" selection-start="128" selection-end="128" vertical-scroll-proportion="0.056239016">
+          <folding>
+            <marker date="1375253774000" expanded="true" signature="548:1135" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>

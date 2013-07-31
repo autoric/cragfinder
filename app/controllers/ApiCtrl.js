@@ -8,7 +8,6 @@ module.exports = function (app) {
      */
     controller.getAll = function (req, res, next) {
         var query = req.query;
-        //req.Model is a value I set in libs/params.js
         req.Model.find(req.conditions, req.fields, req.opts, function (err, docs) {
             if (err) return next(err);
             res.data = docs;
@@ -27,7 +26,6 @@ module.exports = function (app) {
     controller.create = function (req, res, next) {
         var model = new req.Model(req.body);
         model.save(function (err, doc) {
-            console.log(err);
             if (err) return next(err);
             res.data = doc;
             return next();
@@ -40,15 +38,26 @@ module.exports = function (app) {
         req.Model.findById(id, req.fields, function (err, doc) {
             if (err) return next(err);
             if (doc === null) return next(404);
+
             res.data = doc;
             return next();
         });
     };
 
-    controller.update = function (req, res, next) {
+    controller.replace = function (req, res, next) {
+        var id = req.params.id,
+            model = new req.Model(req.body);
+
+        model._id = id;
+        model.save(function (err, doc) {
+            if (err) return next(err);
+            res.data = doc;
+            return next();
+        });
+    };
+
+    controller.patch = function (req, res, next) {
         var id = req.params.id;
-        //default update is a full replace
-        //may want to give attribute replacement instead?
         req.Model.findById(id, function (err, doc) {
             if (err) return next(err);
             if (doc === null) return next(404);
