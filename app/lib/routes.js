@@ -1,6 +1,8 @@
 //var resource = require('express-resource');
 
-module.exports = function (app, models, ApiCtrl, ApiParseQS, ApiResponseFormatter) {
+module.exports = function (app, models, ApiCtrl, KmlCtrl, ApiParseQS, ApiResponseFormatter) {
+
+    app.get('/api/mapData', KmlCtrl.getKml);
 
     app.all('/api/*', ApiParseQS);
 

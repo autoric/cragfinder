@@ -47,6 +47,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1375313396000" expanded="true" signature="603:1190" placeholder="//..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Routes.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,13 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+      <file leaf-file-name="KmlCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/KmlCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="81" selection-start="128" selection-end="128" vertical-scroll-proportion="0.056239016">
-              <folding>
-                <marker date="1375253774000" expanded="true" signature="548:1135" placeholder="//..." />
-              </folding>
+            <state line="36" column="11" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.87170476">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,9 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/TestSchema.js" />
-        <option value="$PROJECT_DIR$/app/middleware/ApiErrorMiddleware.js" />
-        <option value="$PROJECT_DIR$/app/middleware/ApiArgsParser.js" />
         <option value="$PROJECT_DIR$/test/ApiIntegrationSpec.js" />
         <option value="$PROJECT_DIR$/test/ArgsParserSpec.js" />
         <option value="$PROJECT_DIR$/test/ApiParseRouteSpec.js" />
@@ -102,6 +108,9 @@
         <option value="$PROJECT_DIR$/app/models/Crags.js" />
         <option value="$PROJECT_DIR$/app/models/Routes.js" />
         <option value="$PROJECT_DIR$/app/lib/routes.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/controllers/KmlCtrl.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -238,20 +247,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cragfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,18 +514,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CragsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/dal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -599,6 +582,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1375313396000" expanded="true" signature="603:1190" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="384" selection-end="384" vertical-scroll-proportion="0.44991213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="24" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
@@ -606,12 +605,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/routes.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="81" selection-start="128" selection-end="128" vertical-scroll-proportion="0.056239016">
-          <folding>
-            <marker date="1375253774000" expanded="true" signature="548:1135" placeholder="//..." />
-          </folding>
+        <state line="3" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.08435852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/KmlCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="11" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.87170476">
+          <folding />
         </state>
       </provider>
     </entry>
